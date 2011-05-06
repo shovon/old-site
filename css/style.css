@@ -4,7 +4,17 @@ body
 
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 24px;
+}
+
+h1, p
+{
+	margin-bottom: 24px;
+}
+
+b
+{
+	font-weight: bold;
 }
 
 h1
@@ -60,6 +70,11 @@ code
 {
 	font-family: monospace;
 	line-height: 1.5em;
+}
+
+header p
+{
+	margin-bottom: 36px;
 }
 
 header .headarea
