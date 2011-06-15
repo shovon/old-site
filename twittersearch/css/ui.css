@@ -1,0 +1,157 @@
+html
+{
+	background-color: #3b3b3b;
+}
+
+body
+{
+	padding: 7px;
+	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+	
+	text-shadow: 0px -1px 0px #222;
+	color: #ddd;
+}
+
+p
+{
+	margin-bottom: 14px;
+}
+
+a, a:link
+{
+	color: #66c7ff;
+	text-decoration: none;
+	
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #66c7ff;
+}
+
+a:visited
+{
+	color: #8476ca;
+}
+
+a:hover
+{
+	color: #1d3948;
+	background-color: #66c7ff;
+	text-shadow: 0px 1px 0px #a9d9f5;
+	
+	-webkit-box-shadow: 2px 2px 0px #333;
+}
+
+a:active
+{
+	color: #c9e5f5;
+	background-color: #4d88aa;
+	text-shadow: 0px -1px 0px #222;
+}
+
+.ui-box,
+.h-ui-box, /* Highlightable ui-box */
+fieldset
+{
+	background-color: #4c4c4c;
+	
+	padding-top: 12px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	
+	border-style: solid;
+	border-width: 1px;
+	
+	border-top-color: #666;
+	border-left-color: #555;
+	border-right-color: #555;
+	border-bottom-color: #4f4f4f;
+	
+	-webkit-box-shadow: 0px 2px 3px #252525;
+	
+	margin-bottom: 7px;
+}
+
+.h-ui-box:hover
+{
+	background-color: #4f4f4f;
+}
+
+legend
+{
+	color: #999;
+	
+	border-style: solid;
+	border-width: 1px;
+	
+	border-top-color: #666;
+	border-left-color: #4c4c4c;
+	border-right-color: #4c4c4c;
+	border-bottom-color: #4c4c4c;
+	
+	-webkit-box-shadow: 0px -3px 3px #353535;
+	
+	background-color: #4c4c4c;
+	
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input[type="text"], input[type="password"]
+{
+	color: #111;
+	text-shadow: 0px 1px 0px #bbb;
+	
+	background-color: #999;
+	
+	padding: 7px;
+	
+	margin-top: 5px;
+	margin-bottom: 14px;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333;
+	-webkit-box-shadow: inset 0px 1px 3px #343434,
+	                    0px 1px 3px #252525;
+}
+
+input[type="button"]
+{
+	color: #333;
+	text-shadow: 0px 1px 0px #efefef;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbcbcb), to(#bababa));
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333;
+	-webkit-box-shadow: 0px 2px 3px #353535;
+}
+
+input[type="button"]:hover
+{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dbdbdb), to(#cacaca));
+	-webkit-box-shadow: 0px 3px 3px #252525;
+}
+
+input[type="button"]:active
+{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#aaa));
+	-webkit-box-shadow: 0px 1px 3px #252525;
+}
+
+.default-cursor
+{
+	cursor: default;
+}
