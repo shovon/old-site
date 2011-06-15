@@ -170,17 +170,6 @@
 		$('#search-button').click(function() {
 			updateTweets();
 		});
-		
-		//Used to replace the default click event of an anchor
-		//tag with one that opens a link into the user's browser.
-		$('a[href^=http]').live("click", function(event){
-			try {            
-			    air.navigateToURL(new air.URLRequest(this.href));
-			}
-			catch (e) { }
-			
-			event.preventDefault();
-		});
 	})();
 	
 })();

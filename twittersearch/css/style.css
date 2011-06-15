@@ -5,15 +5,9 @@
 
 #tweets h1
 {
-	font-size: 14px;
+	font-size: 1.5em;
 	font-weight: bold;
 	display: inline;
-}
-
-#tweets header p
-{
-	display: inline;
-	font-size: 12px;
 }
 
 #tweets a
@@ -29,7 +23,7 @@
 
 #tweets footer
 {
-	font-size: 10px;
+	font-size: 0.7em;
 	margin-top: 5px;
 }
 
@@ -49,7 +43,7 @@
 {
 	margin-top: 50px;
 	text-align: center;
-	font-size: 11px;
+	font-size: 0.5em;
 	color: #999;
 }
 
@@ -83,5 +77,5 @@
 
 #search-bar #search-button
 {
-	width: 65px;
+	width: 6em;
 }
