@@ -5,7 +5,7 @@
 
 #tweets h1
 {
-	font-size: 1.5em;
+	font-size: 1.125em;
 	font-weight: bold;
 	display: inline;
 }
@@ -23,7 +23,7 @@
 
 #tweets footer
 {
-	font-size: 0.7em;
+	font-size: 0.75em;
 	margin-top: 5px;
 }
 
@@ -31,7 +31,15 @@
 	position: relative;	
 }
 
-#tweets img {
+.tweet img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 1px 1px 2px #101010;
+	-moz-box-shadow: 1px 1px 2px #101010;
+	box-shadow: 1px 1px 2px #101010;
+
 	position: absolute;
 }
 
@@ -78,4 +86,9 @@
 #search-bar #search-button
 {
 	width: 6em;
+}
+
+#top-tweets-bar
+{
+	line-height: 1.7em;
 }
