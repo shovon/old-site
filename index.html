@@ -5,10 +5,6 @@
 		
 		<title>S. Rahman</title>
 		
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
-		
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/960.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -23,7 +19,7 @@
 					<div class="headarea"><h1>Salehen Shovon Rahman</h1> <p class="one-line">Hobbyist programmer</p></div>
 					<p>
 						<code>
-						&nbsp;&nbsp;email: <a href="mailto:salehen.rahman@gmail.com" title="Email me">salehen.rahman@gmail.com</a><br>
+						&nbsp;&nbsp;email: <span id="temp-address">salehen.rahm<!-- Take this robots! --><span style="display: none;">Go away, you robots!</span>an@gmail.com</span><br>
 						twitter: <a href="http://twitter.com/shovon_rahman" title="Follow me on twitter">@shovon_rahman</a><br>
 						&nbsp;&nbsp;&nbsp;blog: <a href="http://salehenrahman.wordpress.com/" title="Some thoughts that I have.">Thoughts from a hobbyist programmer</a><br>
 						&nbsp;&nbsp;&nbsp;code: <a href="http://github.com/shovon/">github.com/shovon</a>
@@ -32,38 +28,31 @@
 					
 				</header>
 				
-				<article id="irc-list">
+				<article>
 				
-					<h1>Cheat sheets</h1>
-					<p>For CodeIgniter: <a href="https://gist.github.com/941803" title="CodeIgniter cheat sheet.">https://gist.github.com/941803</a></p>
-					<p>For jQuery: <a href="https://gist.github.com/971132">https://gist.github.com/971132</a></p>
-					<p>For removing files from the next commit: <a href="https://gist.github.com/1007609">https://gist.github.com/1007609</a></p>
-					<p>A simple little HTML5 webpage boilerplate: <a href="https://gist.github.com/1008064">https://gist.github.com/1008064</a></p>
-					
-					<h1>IRC networks that I go to sometimes</h1>
-					<p>
-						<b>#ubuntu, Freenode</b><br>
-						Sometimes I get stuck when using Ubuntu, hence that's where I go to get some help.
-					</p>
-					
-					<p>
-						<b>#pygame, Freenode</b><br>
-						Currently, I'm trying to learn to program cross-platform games. I figured that PyGame is a nice set of tools to help me with that. #pygame is the place I go familiarize myself with this set of libraries.
-					</p>
-						
-					<p>
-						<b>#xna, Efnet</b><br>
-						When I want to make intense games, I use XNA.
-					</p>
-					
-					<p>
-						<b>#flixel, Freenode</b><br>
-						I'm also interested into building flash games, so I discuss about ActionScript 3 game development using Flixel.
-					</p>
+				<h1>Sample Work</h1>
+				<p><strong><a href="http://shovon.github.com/mathedit">Math Editor</a></strong>: helps write math using LaTeX syntax.</p>
+				
+				<p><strong><a href="http://shovon.github.com/twittersearch">Twitter Search</a></strong>: search up a term, and see what people are talking about.</p>
+				
+				<p><strong><a href="http://shovon.github.com/artquake">ArtQuake.ca website design</a></strong>: this is the design I published back in 2010, for a youth art event that took place in the summer of that very year.</p>
 				
 				</article>
 				
 			</div>
+			
+			<script type="text/javascript">
+			
+			(function(window, document, undefined) {
+				
+				var address = document.getElementById('temp-address').innerHTML;
+				document.getElementById('temp-address').innerHTML = '<a href="mailto:' + atob('c2FsZWhlbi5yYWhtYW5AZ21haWwuY29t') + '">' + address + '</a>'
+				
+			})(this, this.document);
+			
+			</script>
 		</div>
+		
+		
 	</body>
 </html>

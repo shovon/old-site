@@ -52,21 +52,25 @@
 			$('#search-term').attr('value', 'twitter');
 			
 			// Now update the tweets.
-			twitterReader.updateTweets();
+			twitterReader.MainUI.updateTweets();
 		});
 	});
 	
 	// ON SEARCH TERM TEXTBOX ENTER KEY PRESS
 	
 	$('#search-term').keyup(function(event){
+		console.log('Key-up event called');
+	
 		if(event.keyCode == 13)
-			twitterReader.updateTweets();
+			twitterReader.MainUI.updateTweets();
 	});
 	
 	// ON SEARCH BUTTON CLICK
 	
 	$('#search-button').click(function() {
-		twitterReader.updateTweets();
+		console.log('Click event called');
+	
+		twitterReader.MainUI.updateTweets();
 	});
 	
 })(window);
