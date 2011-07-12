@@ -2,70 +2,135 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		
 		<title>S. Rahman</title>
-		
-		<meta name="description" content="I am a student and a hobbyist programmer. Up until now, I worked on three different projects. Go ahead and check them out.">
-    	<meta name="keywords" content="Salehen Shovon Rahman, Salehen, Shovon, hobbyist programmer, sample projects, sfu student">
-		
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/960.css">
 		<link rel="stylesheet" href="css/style.css">
 		
-		<script type="text/javascript">
-
+		<meta name="description" content="I am a student and a hobbyist programmer. Up until now, I worked on three different projects. Go ahead and check them out."> 
+    	<meta name="keywords" content="Salehen Shovon Rahman, Salehen, Shovon, hobbyist programmer, sample projects, sfu student">
+		
+		<script type="text/javascript"> 
+ 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-19354344-2']);
 		  _gaq.push(['_trackPageview']);
-
+ 
 		  (function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
-		</script>
+ 
+		</script> 
 	</head>
-	
-	<body>
-		<div id="container" class="container_12">
-			<div class="prefix_2 grid_8 sufix_2">
-			
+	<div id="header-container">
+			<section class="container_12">
 				<header>
+					<div class="grid_12">
+						<div id="social"><p><a href="http://salehenrahman.wordpress.com/"><img src="img/wordpress.png">&nbsp;&nbsp;Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://github.com/shovon/"><img src="img/github.png">&nbsp;&nbsp;github</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/shovon_rahman/"><img src="img/twitter.png">&nbsp;&nbsp;Twitter</a></p></div>
+					</div>
+					<div class="clear"></div>
 				
-					<div class="headarea"><h1>Salehen Shovon Rahman</h1> <p class="one-line">Hobbyist programmer</p></div>
-					<p>
-						<code>
-						&nbsp;&nbsp;email: <span id="temp-address">salehen.rahm<!-- Take this robots! --><span style="display: none;">Go away, you robots!</span>an@gmail.com</span><br>
-						twitter: <a href="http://twitter.com/shovon_rahman" title="Follow me on twitter">@shovon_rahman</a><br>
-						&nbsp;&nbsp;&nbsp;blog: <a href="http://salehenrahman.wordpress.com/" title="Some thoughts that I have.">Thoughts from a hobbyist programmer</a><br>
-						&nbsp;&nbsp;&nbsp;code: <a href="http://github.com/shovon/">github.com/shovon</a>
-						</code>
-					</p>
+					<div class="grid_6">
+						<p id="my-name">Salehen Shovon Rahman</p>
+						<h1>Hobbyist</h1> <h1 id="last-h1">Programmer</h1>
+						
+					</div>
+					<div id="blurb-part" class="grid_6">
+						<p id="blurb">
+							Hi there! I am a student at SFU, and I write apps and games during my spare time.
+							But if you're here to look for a programmer with mad skills to join your team, then
+							you're at the right place. Better yet, I also know quite a bit of design. So,
+							if you're interested, hit me up with an email over at sale<span style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You're never going to find me! Mooo ha ha ha ha ha!</span>he<!-- Not here. -->n.rah<!-- OK, the bot reads this, they have no clue. -->m<span>an&#64;gmai</span>l.com;
+							I'd be more than happy to hear from you.
+						</p>
+					</div>
+					<div class="clear"></div>
 					
 				</header>
+			</section>
+		</div>
+		
+		<div class="section-header">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Some Apps that I Built</h3>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<section id="apps">
+		
+			<div  class="container_12">
 				
 				<article>
-				
-				<h1>Sample Work</h1>
-				<p><strong><a href="http://shovon.github.com/mathedit">Math Editor</a></strong>: helps write math using LaTeX syntax.</p>
-				
-				<p><strong><a href="http://shovon.github.com/twittersearch">Twitter Search</a></strong>: search up a term, and see what people are talking about.</p>
-				
-				<p><strong><a href="http://shovon.github.com/artquake" rel="nofollow">ArtQuake.ca website design</a></strong>: this is the design I published back in 2010, for a youth art event that took place in the summer of that very year.</p>
+					<div class="clear"></div>
+					
+					<div class="grid_4">
+						<p><h3>Button Generator</h3></p>
+						<p><a href="http://shovon.github.com/buttongen/"><img src="img/bgen.jpg" alt="Twitter Search"></a></p>
+						
+					</div>
+					
+					<div class="grid_4">
+						<p><h3>Math Editor</h3></p>
+						<p><a href="http://shovon.github.com/mathedit/"><img src="img/math.jpg" alt="Twitter Search"></a></p>
+						
+					</div>
+					
+					<div class="grid_4">
+						<p><h3>Twitter Search</h4></p>
+						<p><a href="http://shovon.github.com/twittersearch/"><img src="img/tweets.jpg" alt="Twitter Search"></a></p>
+						
+					</div>
+					
+					<div class="clear"></div>
 				
 				</article>
-				
-			</div>
 			
-			<script type="text/javascript">
-			(function(window, document, undefined) {
-				
-				var address = document.getElementById('temp-address').innerHTML;
-				document.getElementById('temp-address').innerHTML = '<a href="mailto:' + atob('c2FsZWhlbi5yYWhtYW5AZ21haWwuY29t') + '">' + address + '</a>'
-				
-			})(this, this.document);
-			</script>
+			</div>
+		</section>
+		
+		<div class="section-header">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Past Work</h3>
+				</div>
+				<div class="clear"></div>
+			</div>
 		</div>
+		
+		<div id="past-work">
+			<div class="container_12">
+				<article>
+					<!--<div class="grid_12"><h1>Past Work</h1></div><div class="clear"></div>-->
+					
+					<div class="grid_4">
+						<h4>ArtQuake</h4>
+						<p>
+							ArtQuake is an art and music event held annually in Vancouver. I designed
+							their website for their 2010, Summer event, that took place at the Wise
+							Hall.
+						</p>
+						<p>
+							I used XHTML and CSS3 to layout and design the site, JavaScript to display
+							the twitter stream, and PHP for the contact form (not present in
+							the demo).
+						</p>
+					</div>
+					
+					<div class="grid_8"><p><a href="http://shovon.github.com/artquake/"><img src="img/aq.jpg" width="620" alt="The ArtQuake website"></a></p></div>
+					<div class="clear"></div>
+				</article>
+			</div>
+		</div>
+	
+		<footer>
+			<div class="container_12">
+			
+				<div id="copyright" class="grid_12"><p>Copyright &copy; Salehen Shovon Rahman 2011</p></div>
+			
+			</div>
+		</footer>
 	</body>
 </html>
