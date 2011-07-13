@@ -761,8 +761,12 @@ h3 {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
-#blur a:hover {
+#blurb a:hover {
 	background-color: #2881be;
+	border-color: #133f5d;
+	borer-style: solid;
+	border-width: 1px;
+	text-shadow: 0 0 5px #fff, 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
 
 img {
@@ -813,7 +817,7 @@ img {
 	background-image: url('img/cloud.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	padding-top: 74px;
+	padding-top: 32px;
 	padding-bottom: 32px;
 }
 
