@@ -748,6 +748,23 @@ h3 {
 	line-height: 1.2em;
 }
 
+#blurb a {
+	background-color: #213948;
+	background-color: rgba(0, 0, 0, 0.55);
+	color: #9fd4e1;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#blurb a:link {
+	background-color: rgba(0, 0, 0, 0.55);
+}
+
+#blurb a:visited {
+	color: #9fd4e1;
+	background-color: rgba(0, 0, 0, 0.55);
+}
+
 img {
 	border-color: #777;
 	border-style: solid;
@@ -785,8 +802,10 @@ img {
 }
 
 #social a {
+	background: none;
 	color: #fff;
 	text-decoration: none;
+	text-shadow: none;
 }
 
 #header-container {
@@ -842,7 +861,10 @@ header p {
 
 .section-header {
 	padding-top: 12px;
+	background-image: -webkit-gradient(linear, 0%, 0%, 0%, 100%, from(#666), to(#222));
 	background-image: -webkit-linear-gradient(#666, #222);
+	background-image: -moz-linear-gradient(#666, #222);
+	background-image: -o-linear-gradient(#666, #222);
 }
 
 .section-header h3 {

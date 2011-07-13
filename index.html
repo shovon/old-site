@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>S. Rahman</title>
+		<title>Salehen S. Rahman</title>
 		<link rel="stylesheet" href="css/style.css">
 		
 		<meta name="description" content="I am a student and a hobbyist programmer. Up until now, I worked on three different projects. Go ahead and check them out."> 
@@ -20,9 +20,14 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
  
-		</script> 
+		</script>
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+		<![endif]-->
 	</head>
-	<div id="header-container">
+	<body>
+		<div id="header-container">
 			<section class="container_12">
 				<header>
 					<div class="grid_12">
@@ -40,7 +45,7 @@
 							Hi there! I am a student at SFU, and I write apps and games during my spare time.
 							But if you're here to look for a programmer with mad skills to join your team, then
 							you're at the right place. Better yet, I also know quite a bit of design. So,
-							if you're interested, hit me up with an email over at sale<span style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You're never going to find me! Mooo ha ha ha ha ha!</span>he<!-- Not here. -->n.rah<!-- OK, the bot reads this, they have no clue. -->m<span>an&#64;gmai</span>l.com;
+							if you're interested, hit me up with an email over at <span id="the-communicator">sale<span style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You're never going to find me! Mooo ha ha ha ha ha!</span>he<!-- Not here. -->n&#46;rah<!-- OK, the bot reads this, they have no clue. -->m<span>an&#64;gmai</span>l&#46;com</span>;
 							I'd be more than happy to hear from you.
 						</p>
 					</div>
@@ -132,5 +137,19 @@
 			
 			</div>
 		</footer>
+		
+		<script type="text/javascript">
+		
+		(function (document) {
+		
+			var left = 'PGEgaHJlZj0ibWFpbHRvOnNhbGVoZW4ucmFobWFuQGdtYWlsLmNvbSI+';
+			var right = 'PC9hPg==';
+			
+			var innerJunk = document.getElementById('the-communicator').innerHTML;
+			document.getElementById('the-communicator').innerHTML = atob(left) + innerJunk + atob(right);
+			
+		})(this.document);
+		
+		</script>
 	</body>
 </html>
