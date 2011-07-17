@@ -707,13 +707,29 @@ body {
   zoom: 1;
 }
 
+/* `Web fonts
+----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: lobster-1;
+	src: url('font-face/Lobster_1.3.otf') format('opentype');
+}
+
+ @font-face {
+	font-family: 'museo-1';
+	src: url('webfonts/eot/style_183117.eot?#iefix') format('embedded-opentype'),
+	     url('webfonts/woff/style_183117.woff') format('woff'),
+		 url('webfonts/ttf/style_183117.ttf') format('truetype'),
+		 url('webfonts/svg/style_183117.svg#MuseoSlab-500') format('svg');
+}
+
 /* `Main
 ----------------------------------------------------------------------------------------------------*/
 
 html {
 	background-color: #121212;
 	color: #fff;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -822,6 +838,7 @@ img {
 }
 
 header h1 {
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 4.8em;
 	line-height: 1.5em;
 	margin-bottom: -40px;
@@ -844,11 +861,13 @@ header p {
 
 #blurb {
 	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 #my-name {
 	/*color: rgba(255, 255, 255, 0.55);*/
+	font-family: lobster-1, Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
@@ -876,6 +895,7 @@ header p {
 }
 
 .section-header h3 {
+	font-family: Arial, Helvetica, sans-serif;
 	margin-bottom: 12px;
 }
 
