@@ -33,9 +33,13 @@ sup {
 }
 sub { vertical-align: sub; }
 
+header {
+	position: relative;
+}
+
 header p {
 	padding-left: 10px;
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 .top {
@@ -43,6 +47,32 @@ header p {
 	background-color: #ff2626;
 	background-image: url('img/bg-nav.png');
 	margin-bottom: 20px;
+}
+
+.moto {
+	color: #909090;
+	font-size: 1.5em;
+	left: 360px;
+	position: absolute;
+	bottom: 0;
+}
+
+.time-and-place {
+	bottom: 0;
+	font-size: 1em;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	right: 0;
+}
+
+.time-and-place p {
+	margin-bottom: 0;
+}
+
+.time-and-place strong {
+	font-size: 1.125em;
+	font-weight: bold;
 }
 
 .x {
@@ -57,7 +87,7 @@ header p {
 
 .big-header {
 	font-family: 'Carme', Helvetica, Arial, sans-serif;
-	font-size: 2.5em;
+	font-size: 1.5em;
 }
 
 .nav {
