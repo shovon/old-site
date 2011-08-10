@@ -1,6 +1,8 @@
 (function (window, document, undefined) {
 	String.prototype.formatDate = function() {
-		return getTimeDifference(new Date(this));
+		return getTimeDifference(
+		new Date(this.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/,
+        "$1 $2 $4 $3 UTC")));
 	};
 
 	/**
