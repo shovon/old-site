@@ -19,7 +19,7 @@
 				
 				.replace(/theMeta/, 
 					'<a href="http://twitter.com/'
-					+ data[i].from_user + '/status/' 
+					+ data[i].user.screen_name + '/status/' 
 					+ tweetId + '" target="_blank">'
 					+ data[i].created_at.formatDate() + '</a>'
 					+ ' - <a href="http://twitter.com/intent/tweet?in_reply_to='
