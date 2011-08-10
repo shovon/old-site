@@ -13,15 +13,23 @@ body {
 	background-repeat: no-repeat;
 }
 
+h1,
 h3,
 h4 {
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
 
+h1,
 h3,
 h4,
 p {
 	margin-bottom: 24px;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1em;
 }
 
 h3 {
@@ -56,20 +64,20 @@ header {
 }
 
 .inner {
-	padding: 15px;
+	padding: 0 0 0 15px;
 }
 
 .content {
-	width: 720px;
+	width: 640px;
 }
 
 .sidebar {
-	width: 240px;
+	width: 320px;
 }
 
-header p {
+header {
 	padding-left: 10px;
-	font-size: 1em;
+	font-size: 1.25em;
 	line-height: 1em;
 }
 
@@ -130,36 +138,45 @@ a:hover {
 }
 
 .moto {
-	bottom: 0;
 	color: #909090;
-	font-size: 1.5em;
-	left: 0;
-	position: absolute;
+	font-size: 1.25em;
 	text-align: center;
 	width: 960px;
 }
 
-.time-and-place {
-	bottom: 0;
-	font-size: 1em;
+.share {
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+.share span {
+	display: inline-block;
+}
+
+.right-head {
+	bottom: 0;	
 	position: absolute;
 	right: 0;
 	text-align: right;
-	right: 0;
 }
 
-.time-and-place p {
+.right-head p {
 	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-.time-and-place strong {
-	font-size: 1.125em;
+.right-head strong {
 	font-weight: bold;
+}
+
+.time-and-place {
+	font-size: 0.75em;
 }
 
 .x {
 	color: #ff2626;
 	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	margin-left: 5px;
 }
 
 .ted {
@@ -170,6 +187,9 @@ a:hover {
 .big-header {
 	font-family: 'Carme', Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 0;
+	position: replative;
 }
 
 .nav {

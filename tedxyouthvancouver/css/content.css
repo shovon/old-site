@@ -10,7 +10,7 @@
 
 .intro-text > p {
 	font-size: 1.5em;
-	line-height: 1em;
+	line-height: 1.25em;
 	margin-bottom: 12px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .portrait {
-	sbackground-color: #666;
+	background-color: #666;
 	background-image: url('img/bg-portrait.png');
 	color: #fff;
 	padding: 10px;
@@ -33,6 +33,8 @@
 }
 
 .portrait-title {
+	font-family: Abel, Arial, Helvetica, sans-serif;
+	font-weight: normal;
 	color: #ff5e5e;
 	margin-bottom: 5px;
 }
