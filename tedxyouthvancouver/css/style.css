@@ -64,7 +64,7 @@ header {
 }
 
 .inner {
-	padding: 0 0 0 15px;
+	padding: 10px;
 }
 
 .content {
@@ -98,7 +98,7 @@ a:hover {
 	border-bottom-color: #aaa;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	color: #aaa;
+	color: #fff;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -241,7 +241,7 @@ nav li a:visited {
 }
 
 nav li a:hover {
-	border-bottom-color: #880000;
+	border-bottom-color: #6f1010;
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 }
@@ -258,8 +258,12 @@ nav li a:hover {
 .copy {
 	color: #aaa;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 0.625em;
 	padding-bottom: 24px;
+}
+
+.copy p {
+	font-size: 0.625em;
+	line-height: 1.75em;
 }
 
 .padding-bottom {
@@ -286,4 +290,109 @@ nav li a:hover {
 	left: 990px;
 	bottom: -15px; /* Equal to the height of the curl */
 	border-right: 30px solid transparent; /* Makes the curl slant left */
+}
+
+.main-footer, 
+.fin-word span {
+	background-color: #050505;
+	background-image: url('img/bg-footer.png');
+}
+
+.main-footer {
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.tweet {
+	background-color: #131313;
+	background-image: url('img/bg-tweet.png');
+	padding: 10px;
+}
+
+.tweet-meta {
+	font-size: 0.75em;
+	margin-bottom: 0px !important;
+}
+
+.follow-us {
+	text-align: right;
+}
+
+.twitter-header h3 {
+	font-family: Abel, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+
+.tweet p {
+	margin-bottom: 6px;
+}
+
+.fin {
+	border-bottom-color: #000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #444;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	font-size: 24px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.fin-word {
+	position: absolute;
+	text-align: center;
+	top: -12px;
+	width: 940px;
+}
+
+.fin-word span {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.quote {
+	background-color: #080808;
+	background-image: url('img/bg-quote.png');
+	border-bottom-color: #111;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-color: #111;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 10px;
+}
+
+.bottom-border {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+}
+
+.share-info {
+	color: #fff;
+	position: absolute;
+	right: 480px;
+	text-align: right;
+	top: 20px
+}
+
+.share-info span {
+	background-color: #080808;
+	background-image: url('img/bg-quote.png');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	padding: 5px 10px 5px 10px;
 }
