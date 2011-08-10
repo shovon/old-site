@@ -24,6 +24,7 @@ h3 {
 }
 
 p {
+	line-height: 1.5em;
 	font-size: 1em;
 }
 
@@ -37,10 +38,78 @@ header {
 	position: relative;
 }
 
+.content,
+.sidebar {
+	float: left;
+	clear: right;
+}
+
+.inner {
+	padding: 15px;
+}
+
+.content {
+	width: 720px;
+}
+
+.sidebar {
+	width: 240px;
+}
+
 header p {
 	padding-left: 10px;
 	font-size: 1em;
+	line-height: 1em;
 }
+
+a,
+a:link {
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #ff2626;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #4c799a;
+}
+
+a:hover {
+	background-color: #ff2626;
+	border-bottom-color: #aaa;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #aaa;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.top-left-grunge,
+.top-right-grunge,
+.bottom-left-grunge,
+.bottom-right-grunge { background-repeat: no-repeat; }
+
+.bottom-grunge,
+.top-grunge { background-repeat: repeat-x; }
+
+.top-left-grunge,
+.top-grunge {
+	background-position: top left;
+}
+
+.top-right-grunge,
+.right-grunge { background-position: top right; }
+
+.bottom-left-grunge,
+.bottom-grunge { background-position: bottom left; }
+
+.bottom-right-grunge { background-position: bottom right; }
+
+.top-left-grunge { background-image: url('img/top-left-grunge.png'); }
+.top-right-grunge { background-image: url('img/top-right-grunge.png'); }
+.bottom-left-grunge { background-image: url('img/bottom-left-grunge.png'); }
+.bottom-right-grunge { background-image: url('img/bottom-right-grunge.png'); }
+.top-grunge { background-image: url('img/top-grunge.png'); }
+.bottom-grunge { background-image: url('img/bottom-grunge.png'); }
 
 .top {
 	height: 3px;
@@ -50,11 +119,13 @@ header p {
 }
 
 .moto {
+	bottom: 0;
 	color: #909090;
 	font-size: 1.5em;
-	left: 360px;
+	left: 0;
 	position: absolute;
-	bottom: 0;
+	text-align: center;
+	width: 960px;
 }
 
 .time-and-place {
@@ -101,15 +172,47 @@ header p {
 }
 
 nav {
-	padding-top: 10px;
-	padding-bottom: 10px;
 	text-align: center;
 }
 
 nav li {
+	display: inline;
+}
+
+nav li a,
+nav li a:link {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
-	display: inline;
+	display: inline-block;
+	
+	margin: 0;
+	
+	color: #fff;
+	
+	border-bottom-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	
+	/* Internet Explorer stuff. */
+	zoom: 1;
+	*display:inline;
+	_height: 30px;
+}
+
+nav li a:visited {
+	color: #fff;
+	
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+nav li a:hover {
+	border-bottom-color: #880000;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
 }
 
 .main {
