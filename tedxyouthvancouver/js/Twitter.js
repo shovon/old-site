@@ -5,7 +5,7 @@
 		var sampleTweet = $('#hidden-tweet-body').html();
 		var tweetsBatch = '';
 		
-		tweetsBatch += '<div id="twitter-header" class="twitter-header"><div class="grid_12"><div class="inner"><h3><a href="http://twitter.com/TEDxYouthVAN" target="_blank">From Twitter...</a></h3></div></div></div><div class="clear"></div>'
+		tweetsBatch += '<div id="twitter-header" class="twitter-header"><div class="grid_12"><div class="inner"><h3><a href="http://twitter.com/TEDxYouthVAN">From Twitter...</a></h3></div></div></div><div class="clear"></div>'
 		
 		var parentObject = this;
 		
@@ -20,7 +20,7 @@
 				.replace(/theMeta/, 
 					'<a href="http://twitter.com/'
 					+ data[i].user.screen_name + '/status/' 
-					+ tweetId + '" target="_blank">'
+					+ tweetId + '">'
 					+ data[i].created_at.formatDate() + '</a>'
 					+ ' - <a href="http://twitter.com/intent/tweet?in_reply_to='
 					+ tweetId + '" target="_blank">reply</a>'

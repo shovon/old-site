@@ -1,3 +1,6 @@
+/* Tags
+-------------------------------------------------------*/
+
 html {
 	background-color: #1f1f1f;
 	background-image: url('img/bg.png');
@@ -49,48 +52,53 @@ p {
 
 sup { 
 	vertical-align: super;
-	font-size: 0.625em;
+	font-size: 0.75em;
 }
-sub { vertical-align: sub; }
-
-header {
-	position: relative;
-}
-
-.content,
-.sidebar {
-	float: left;
-	clear: right;
+sub {
+	vertical-align: sub; 
+	font-size: 0.57em;
 }
 
-.inner {
-	padding: 10px;
+em,
+i {
+	font-style: italic;
 }
 
-.content {
-	width: 640px;
+strong,
+b {
+	font-style: bold;
 }
 
-.sidebar {
-	width: 320px;
-}
-
-header {
-	padding-left: 10px;
+blockquote {
 	font-size: 1.25em;
-	line-height: 1em;
+	font-style: italic;
+}
+
+blockquote cite {
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+q {
+	quotes:"\201C" "\201D" "\2018" "\2019";
+}
+
+q:before {
+	content:open-quote;
+}
+
+q:after {
+	content:close-quote;
 }
 
 a,
 a:link {
-	padding-top: 0;
-	padding-bottom: 0;
 	color: #ff2626;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #4c799a;
+	color: #a4394a;
 }
 
 a:hover {
@@ -102,107 +110,15 @@ a:hover {
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 }
 
-.top-left-grunge,
-.top-right-grunge,
-.bottom-left-grunge,
-.bottom-right-grunge { background-repeat: no-repeat; }
-
-.bottom-grunge,
-.top-grunge { background-repeat: repeat-x; }
-
-.top-left-grunge,
-.top-grunge {
-	background-position: top left;
-}
-
-.top-right-grunge,
-.right-grunge { background-position: top right; }
-
-.bottom-left-grunge,
-.bottom-grunge { background-position: bottom left; }
-
-.bottom-right-grunge { background-position: bottom right; }
-
-.top-left-grunge { background-image: url('img/top-left-grunge.png'); }
-.top-right-grunge { background-image: url('img/top-right-grunge.png'); }
-.bottom-left-grunge { background-image: url('img/bottom-left-grunge.png'); }
-.bottom-right-grunge { background-image: url('img/bottom-right-grunge.png'); }
-.top-grunge { background-image: url('img/top-grunge.png'); }
-.bottom-grunge { background-image: url('img/bottom-grunge.png'); }
-
-.top {
-	height: 3px;
-	background-color: #ff2626;
-	background-image: url('img/bg-nav.png');
-	margin-bottom: 20px;
-}
-
-.moto {
-	color: #909090;
+header {
 	font-size: 1.25em;
-	text-align: center;
-	width: 960px;
-}
-
-.share {
-	margin-bottom: 0px;
-	text-align: right;
-}
-
-.share span {
-	display: inline-block;
-}
-
-.right-head {
-	bottom: 0;	
-	position: absolute;
-	right: 0;
-	text-align: right;
-}
-
-.right-head p {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.right-head strong {
-	font-weight: bold;
-}
-
-.time-and-place {
-	font-size: 0.75em;
-}
-
-.x {
-	color: #ff2626;
-	font-family: "Arial Black", Arial, Helvetica, sans-serif;
-	margin-left: 5px;
-}
-
-.ted {
-	color: #ff2626;
-	font-family: "Arial Black", Arial, Helvetica, sans-serif;
-}
-
-.big-header {
-	font-family: 'Carme', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
-	font-weight: normal;
-	margin-bottom: 0;
-	position: replative;
-}
-
-.nav {
-	background-color: #ff2626;
-	background-image: url('img/bg-nav.png');
-	color: #fff;
-	font-size: 1.125em;
-	width: 1020px;
-	margin-left: -30px;
+	line-height: 1em;
+	padding-left: 10px;
 	position: relative;
 }
 
 nav {
+	position: relative;
 	text-align: center;
 }
 
@@ -246,6 +162,229 @@ nav li a:hover {
 	border-bottom-width: 3px;
 }
 
+::selection {
+	background-color: #ff5e5e;
+	color: #fff;
+}
+
+::-moz-selection {
+	background-color: #ff5e5e;
+	color: #fff;
+}
+
+::-webkit-selection {
+	background-color: #ff5e5e;
+	color: #fff;
+}
+
+/* Repeated styling.
+-------------------------------------------------------*/
+
+.inner {
+	padding: 10px;
+}
+
+.padding-bottom {
+	padding-bottom: 24px;
+}
+
+.bottom-border {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+}
+
+/* Beatifying the entire site.
+-------------------------------------------------------*/
+
+/**
+ * The corner doesn't repeat at all.
+ */
+.top-left-grunge,
+.top-right-grunge,
+.bottom-left-grunge,
+.bottom-right-grunge { background-repeat: no-repeat; }
+
+/**
+ * Floor and ceiling, background repeat.
+ */
+.bottom-grunge,
+.top-grunge          { background-repeat: repeat-x; }
+
+/**
+ * Position of the top-left corner, and
+ * the top 
+ */
+.top-left-grunge,
+.top-grunge          { background-position: top left; }
+
+.top-right-grunge    { background-position: top right; }
+
+.bottom-left-grunge,
+.bottom-grunge       { background-position: bottom left; }
+
+.bottom-right-grunge { background-position: bottom right; }
+
+/* Now, load the images. */
+.top-left-grunge     { background-image: url('img/top-left-grunge.png'); }
+.top-right-grunge    { background-image: url('img/top-right-grunge.png'); }
+.bottom-left-grunge  { background-image: url('img/bottom-left-grunge.png'); }
+.bottom-right-grunge { background-image: url('img/bottom-right-grunge.png'); }
+.top-grunge          { background-image: url('img/top-grunge.png'); }
+.bottom-grunge       { background-image: url('img/bottom-grunge.png'); }
+
+.top-ribbon {
+	height: 3px;
+	background-color: #ff2626;
+	background-image: url('img/bg-nav.png');
+	margin-bottom: 20px;
+}
+
+/* Styling the "sharing" parts.
+-------------------------------------------------------*/
+
+.share {
+	margin-bottom: 0px;
+	text-align: right;
+	position: relative;
+}
+
+.share span {
+	display: inline-block;
+}
+
+.share-info {
+	color: #fff;
+	position: absolute;
+	right: 280px;
+	text-align: right;
+	top: -3px;
+}
+
+.share-info span {
+	background-color: #080808;
+	background-image: url('img/bg-quote.png');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	padding: 5px 10px 5px 10px;
+}
+
+/* Header
+-------------------------------------------------------*/
+
+.big-header {
+	font-family: 'Carme', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.ted {
+	color: #ff2626;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.x {
+	color: #ff2626;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+}
+
+/* Header > Right-side
+-------------------------------------------------------*/
+
+.right-head {
+	bottom: -16px;	
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+
+/**
+ * A temporary hack to ensure that
+ * the right part of the header has
+ * a consistent margin at the bottom
+ */
+.right-head p {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.right-head strong { font-weight: bold; }
+
+.moto {
+	color: #909090;
+	font-size: 1.25em;
+	text-align: center;
+	width: 960px;
+}
+
+.time-and-place {
+	font-size: 0.75em;
+}
+
+/*
+	Just don't mix up social-links with
+	'share'. They are two separate things.
+ */
+ 
+.social-links {
+	font-size: 0.75em;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.social-links a:hover {
+	background: none;
+	border: none;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* Navigation
+-------------------------------------------------------*/
+
+.nav {
+	background-color: #ff2626;
+	background-image: url('img/bg-nav.png');
+	color: #fff;
+	font-size: 1.125em;
+	width: 1020px;
+	margin-left: -30px;
+	position: relative;
+}
+
+.nav:before, .nav:after {
+	border-color: #430a0a;
+	border-style: solid;
+	border-width: 0;
+	border-top-width: 15px;
+	content: '';
+	position: absolute;
+}
+
+.nav:before {
+	left: -10;
+	bottom: -15px;
+	border-left: 30px solid transparent;
+}
+.nav:after {
+	left: 990px;
+	bottom: -15px;
+	border-right: 30px solid transparent;
+}
+
+/* Main area
+-------------------------------------------------------*/
+
 .main {
 	background-color: #2d2d2d;
 	background-image: url('img/bg-main.png');
@@ -255,52 +394,23 @@ nav li a:hover {
 	margin-bottom: 24px;
 }
 
-.copy {
-	color: #aaa;
-	font-family: Helvetica, Arial, sans-serif;
-	padding-bottom: 24px;
-}
-
-.copy p {
-	font-size: 0.625em;
-	line-height: 1.75em;
-}
-
-.padding-bottom {
-	padding-bottom: 24px;
-}
-
-/* These are the two ribbon "curls". The :before curl is placed to the left, :after to the right */
-.nav:before, .nav:after {
-	border-color: #430a0a;
-	border-style: solid;
-	border-width: 0;
-	border-top-width: 15px; /* This sets the height of the curls, making it half the width to angle the curls more. */
-	content: ''; /* Tells the browser to actually generate the pseudo element */
-	position: absolute;
-}
-.nav:before {
-	/* Position the :before element to the left and below the ribbon element */
-	left: -10;
-	bottom: -15px; /* Equal to the height of the curl */
-	border-left: 30px solid transparent; /* Makes the curl slant right */
-}
-.nav:after {
-	/* Position the :after element to the right and below the ribbon element */
-	left: 990px;
-	bottom: -15px; /* Equal to the height of the curl */
-	border-right: 30px solid transparent; /* Makes the curl slant left */
-}
-
-.main-footer, 
-.fin-word span {
-	background-color: #050505;
-	background-image: url('img/bg-footer.png');
-}
+/* Footer
+-------------------------------------------------------*/
 
 .main-footer {
+	background-color: #050505;
+	background-image: url('img/bg-footer.png');
 	padding-top: 10px;
 	padding-bottom: 10px
+}
+
+/* Footer > Twitter
+-------------------------------------------------------*/
+
+.twitter-header h3 {
+	font-family: Abel, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 12px;
 }
 
 .tweet {
@@ -314,19 +424,12 @@ nav li a:hover {
 	margin-bottom: 0px !important;
 }
 
-.follow-us {
-	text-align: right;
-}
-
-.twitter-header h3 {
-	font-family: Abel, Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	margin-bottom: 12px;
-}
-
 .tweet p {
 	margin-bottom: 6px;
 }
+
+/* Footer > Beautifying
+-------------------------------------------------------*/
 
 .fin {
 	border-bottom-color: #000;
@@ -352,11 +455,27 @@ nav li a:hover {
 }
 
 .fin-word span {
+	background-color: #050505;
+	background-image: url('img/bg-footer.png');
 	padding-left: 24px;
 	padding-right: 24px;
 }
 
-.quote {
+/* Footer > copyright
+-------------------------------------------------------*/
+
+.copyright {
+	color: #aaa;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-bottom: 24px;
+}
+
+.copyright p {
+	font-size: 0.625em;
+	line-height: 1.75em;
+}
+
+.bottomquote {
 	background-color: #080808;
 	background-image: url('img/bg-quote.png');
 	border-bottom-color: #111;
@@ -366,33 +485,4 @@ nav li a:hover {
 	border-top-style: solid;
 	border-top-width: 1px;
 	padding: 10px;
-}
-
-.bottom-border {
-	border-bottom-color: rgba(0, 0, 0, 0.5);
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
-}
-
-.share-info {
-	color: #fff;
-	position: absolute;
-	right: 480px;
-	text-align: right;
-	top: 20px
-}
-
-.share-info span {
-	background-color: #080808;
-	background-image: url('img/bg-quote.png');
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-	box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-	padding: 5px 10px 5px 10px;
 }

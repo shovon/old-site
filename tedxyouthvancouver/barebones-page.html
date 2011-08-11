@@ -4,9 +4,14 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>TEDxYouth@Vancouver</title>
+		<title>TEDxYouth@Vancouver - Innovation. Imagination. Ideas</title>
+		
+		<meta name="keywords" content="ted, tedx, tedxyouth, conference, youth conference">
+		<meta name="description" content="An independently organized TED event, entirely organized by students.">
+		
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		
 		<link rel="stylesheet" href="css/reset.css">
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -15,12 +20,24 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/content.css">
 		
+		<!--[if lte IE 6]>
+		<style type="text/css">
+			img, div { behavior: url('ipepngfix/iepngfix.htc') }
+		</style>
+		<![endif]-->
+		
+		<!--[if lte IE 6]>
+		<script type="text/javascript" src="iepngfix_tilebg.js"></script>
+		<![endif]-->
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	
 	<body>
+		<!-- Initial container div's to help give the
+		     page some texture. -->
 		<div class="top-left-grunge">
 		<div class="top-right-grunge">
 		<div class="bottom-left-grunge">
@@ -28,10 +45,57 @@
 		<div class="top-grunge">
 		<div class="bottom-grunge">
 	
-			<div class="top"></div>
+			<!-- The red ribbon at the top -->
+			<div class="top-ribbon"></div>
 		
+			<!-- Now, let's start adding content to the
+                 page. Let's start it by declaring a
+				 div with a class of container_12.-->
 			<div class="container_12">
+				
+				<!-- The sharing is caring part. -->
+				<aside>
+					
+					<div id="share" class="share">
+						
+						<!-- This is invisible, and only shows up
+                             the div tag with the ID 'share-buttons'
+							 is highlighted. -->
+						<div id="share-info" class="share-info" style="display:none;"><span>Spread the word about TEDxYouth@Vancouver!</span></div>
+						
+						<!-- This is where all the share buttons
+						     are held. -->
+						<span id="share-buttons">
+						
+							<!-- Facebook and Twitter share buttons are here. 
+							     As you can see, there aren't any spaces 
+								 between these two buttons. Leave them like
+								 that!  we add any form of white spaces, an
+								 extra bit of padding gets added, which
+								 is something we don't want. -->
+							<span><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="TEDxYouthVAN">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></span><span><iframe src="http://www.facebook.com/plugins/like.php?href=http://shovon.github.com/&layout=button_count&amp;show_faces=true&amp;width=80&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></span>
+							
+							<!-- Google+ button is here. -->
+							<span>
+								<g:plusone size="small" href="http://shovon.github.com/"></g:plusone>
+								<script type="text/javascript">
+									(function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/plusone.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									})();
+								</script>
+							</span>
+							
+						</span> <!-- id="share-buttons" -->
+					</div> <!-- id="share" -->
+					
+				</aside>
+			
+				<!-- The header with logo and everything. -->
 				<header>
+				
+					<!-- The logo. -->
 					<h1 class="big-header">
 						<span class="ted">TED<sup>x</sup></span>Youth@Vancouver<br>
 					</h1>
@@ -39,37 +103,112 @@
 						<span class="x">x</span> = independently organized TED event
 					</p>
 					
-					<div class="moto">
-						Innovation. Imagination. Ideas.
-					</div>
+					<!-- To the right. -->
+					<aside>
 					
-					<div class="time-and-place">
-						<p><strong>November 19, 2011</strong></p>
-						<p>Come join us.</p>
-					</div>
+						<div class="right-head">
+							<p><span class="moto">Innovation. Imagination. Ideas.</span></p>
+							<p class="time-and-place"><strong>Come join us on November 19, 2011.</strong></p>
+							<p class="social-links">
+								Follow us on Facebook and Twitter.
+								<a href="http://www.facebook.com/pages/TEDxYouth-Vancouver/111871218909341"><img src="img/facebook.png"></a>
+								<a href="http://twitter.com/TEDxYouthVan"><img src="img/twitter.png"></a>
+							</p>
+						</div>
+						
+					</aside>
 				</header>
 				
+				<!-- Now, we bring in the main, solid-coloured
+                     center column. -->
 				<div class="main">
-					<div class="nav">
-						<nav>
-							<ul>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">When</a></li>
-								<li><a href="#">Attend</a></li>
-								<li><a href="#">Join</a></li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="intro-image">
-					</div>
-					
-					
-				</div>
 				
-				<div class="copy">
-					Copyright &copy; 2011 TEDxYouth@Vancouver. 
-					All rights reserved. This independent TEDx event is operated under license from TED.</div>
+					<nav>
+						<div class="nav">
+							
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">When</a></li>
+									<li><a href="#">Attend</a></li>
+									<li><a href="#">Join</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+						</div>
+					</nav>
+						 
+					<section>
+					
+						<!-- And this is where all modifications
+                             happen. Go ahead, be creative here.-->
+						
+					</section>
+					
+					<!-- The footer starts here. -->
+					
+					<footer>
+						<div class="main-footer">
+
+							<!-- Twitter stuff here. -->
+							<div id="fancy-twitter-stream" style="display:none">
+								
+								<!-- This will get picked up by some JavaScript
+                                     code, and will be used as template to hold
+									 a tweet. -->
+								<div id="hidden-tweet-body">
+								
+									<div class="grid_3">
+										<div class="tweet">
+										
+											<article>
+												<p>
+													theTweet
+												</p>
+											</article>
+											
+											<footer>
+												<p class="tweet-meta">theMeta</p>
+											</footer>
+											
+										</div>
+									</div>
+									
+								</div>
+								
+							</div> <!-- End of twitter stuff here. -->
+							
+							<!-- A piece of decoration for the footer. -->
+							<div class="grid_12">
+								<div class="fin">
+									<div class="fin-word">
+										<span>fin</span>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							
+							<!-- The quote. -->
+							<!-- TODO: Fix the quote's styling. -->
+							<div class="grid_6">
+								<div class="bottomquote">
+									<blockquote>&ldquo;Do or do not; there is no try.&rdquo; &#151; <cite>Yoda. Jedi Grandmaster</cite></blockquote>
+								</div>
+							</div>
+							
+							<!-- The copyright text. -->
+							<div class="grid_6">
+								<div class="copyright">
+									<p>
+										Copyright &copy; 2011 TEDxYouth@Vancouver. 
+										All rights reserved. This independent TEDx event is operated under license from TED.
+									</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+							
+						</div> <!-- id="main-footer" -->
+					
+					</footer>
+				</div>
 			</div>
 		
 		</div>
@@ -78,6 +217,12 @@
 		</div>
 		</div>
 		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/DateFormat.js"></script>
+		<script type="text/javascript" src="js/String.js"></script>
+		<script type="text/javascript" src="js/Twitter.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 
 </html>
