@@ -372,7 +372,7 @@ nav li a:hover {
 }
 
 .nav:before {
-	left: -10;
+	left: 0;
 	bottom: -15px;
 	border-left: 30px solid transparent;
 }
