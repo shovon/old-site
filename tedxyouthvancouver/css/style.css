@@ -163,18 +163,19 @@ nav li a:hover {
 }
 
 ::selection {
-	background-color: #ff5e5e;
+	background-color: #c13c3c;
 	color: #fff;
 }
 
 ::-moz-selection {
-	background-color: #ff5e5e;
+	background-color: #c13c3c;
 	color: #fff;
 }
 
 ::-webkit-selection {
-	background-color: #ff5e5e;
+	background-color: #ff5757;
 	color: #fff;
+	text-shadow: none;
 }
 
 /* Repeated styling.
