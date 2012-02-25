@@ -124,7 +124,7 @@ h6 a:visited {
 
 @media only sreen and (min-width: 1240px) {
 	.center-content {
-		max-width: 0;
+		max-width: 1240px;
 		width: 1240px;
 	}
 }
