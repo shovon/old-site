@@ -122,6 +122,13 @@ h6 a:visited {
 	color: #333;
 }
 
+@media only sreen and (min-width: 1240px) {
+	.center-content {
+		max-width: 0;
+		width: 1240px;
+	}
+}
+
 @media only screen and (min-width: 1120px) {
 	html {
 		font-size: 1.25em;
