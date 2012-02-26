@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /artquake/
+Disallow: /rough_draft/
+Disallow: /1tedxyouthvancouver1/

@@ -1,0 +1,489 @@
+/* Tags
+-------------------------------------------------------*/
+
+html {
+	background-color: #1f1f1f;
+	background-image: url('img/bg.png');
+	color: #aaa;
+	font-family: Abel, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+body {
+	background-image: url('img/bg-graffiti.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+h1,
+h3,
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h1,
+h3,
+h4,
+p {
+	margin-bottom: 24px;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+h3 {
+	font-size: 1.25em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.125em;
+	line-height: 1.333333em;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1em;
+}
+
+sup { 
+	vertical-align: super;
+	font-size: 0.75em;
+}
+sub {
+	vertical-align: sub; 
+	font-size: 0.57em;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+strong,
+b {
+	font-style: bold;
+}
+
+blockquote {
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+blockquote cite {
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+q {
+	quotes:"\201C" "\201D" "\2018" "\2019";
+}
+
+q:before {
+	content:open-quote;
+}
+
+q:after {
+	content:close-quote;
+}
+
+a,
+a:link {
+	color: #ff2626;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #a4394a;
+}
+
+a:hover {
+	background-color: #ff2626;
+	border-bottom-color: #aaa;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+header {
+	font-size: 1.25em;
+	line-height: 1em;
+	padding-left: 10px;
+	position: relative;
+}
+
+nav {
+	position: relative;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a,
+nav li a:link {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: inline-block;
+	
+	margin: 0;
+	
+	color: #fff;
+	
+	border-bottom-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	
+	/* Internet Explorer stuff. */
+	zoom: 1;
+	*display:inline;
+	_height: 30px;
+}
+
+nav li a:visited {
+	color: #fff;
+	
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+nav li a:hover {
+	border-bottom-color: #6f1010;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+::selection {
+	background-color: #c13c3c;
+	color: #fff;
+}
+
+::-moz-selection {
+	background-color: #c13c3c;
+	color: #fff;
+}
+
+::-webkit-selection {
+	background-color: #ff5757;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* Repeated styling.
+-------------------------------------------------------*/
+
+.inner {
+	padding: 10px;
+}
+
+.padding-bottom {
+	padding-bottom: 24px;
+}
+
+.bottom-border {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+}
+
+/* Beatifying the entire site.
+-------------------------------------------------------*/
+
+/**
+ * The corner doesn't repeat at all.
+ */
+.top-left-grunge,
+.top-right-grunge,
+.bottom-left-grunge,
+.bottom-right-grunge { background-repeat: no-repeat; }
+
+/**
+ * Floor and ceiling, background repeat.
+ */
+.bottom-grunge,
+.top-grunge          { background-repeat: repeat-x; }
+
+/**
+ * Position of the top-left corner, and
+ * the top 
+ */
+.top-left-grunge,
+.top-grunge          { background-position: top left; }
+
+.top-right-grunge    { background-position: top right; }
+
+.bottom-left-grunge,
+.bottom-grunge       { background-position: bottom left; }
+
+.bottom-right-grunge { background-position: bottom right; }
+
+/* Now, load the images. */
+.top-left-grunge     { background-image: url('img/top-left-grunge.png'); }
+.top-right-grunge    { background-image: url('img/top-right-grunge.png'); }
+.bottom-left-grunge  { background-image: url('img/bottom-left-grunge.png'); }
+.bottom-right-grunge { background-image: url('img/bottom-right-grunge.png'); }
+.top-grunge          { background-image: url('img/top-grunge.png'); }
+.bottom-grunge       { background-image: url('img/bottom-grunge.png'); }
+
+.top-ribbon {
+	height: 3px;
+	background-color: #ff2626;
+	background-image: url('img/bg-nav.png');
+	margin-bottom: 20px;
+}
+
+/* Styling the "sharing" parts.
+-------------------------------------------------------*/
+
+.share {
+	margin-bottom: 0px;
+	text-align: right;
+	position: relative;
+}
+
+.share span {
+	display: inline-block;
+}
+
+.share-info {
+	color: #fff;
+	position: absolute;
+	right: 280px;
+	text-align: right;
+	top: -3px;
+}
+
+.share-info span {
+	background-color: #080808;
+	background-image: url('img/bg-quote.png');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+	padding: 5px 10px 5px 10px;
+}
+
+/* Header
+-------------------------------------------------------*/
+
+.big-header {
+	font-family: 'Carme', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.ted {
+	color: #ff2626;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.x {
+	color: #ff2626;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+}
+
+/* Header > Right-side
+-------------------------------------------------------*/
+
+.right-head {
+	bottom: -16px;	
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+
+/**
+ * A temporary hack to ensure that
+ * the right part of the header has
+ * a consistent margin at the bottom
+ */
+.right-head p {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.right-head strong { font-weight: bold; }
+
+.moto {
+	color: #909090;
+	font-size: 1.25em;
+	text-align: center;
+	width: 960px;
+}
+
+.time-and-place {
+	font-size: 0.75em;
+}
+
+/*
+	Just don't mix up social-links with
+	'share'. They are two separate things.
+ */
+ 
+.social-links {
+	font-size: 0.75em;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.social-links a:hover {
+	background: none;
+	border: none;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* Navigation
+-------------------------------------------------------*/
+
+.nav {
+	background-color: #ff2626;
+	background-image: url('img/bg-nav.png');
+	color: #fff;
+	font-size: 1.125em;
+	width: 1020px;
+	margin-left: -30px;
+	position: relative;
+}
+
+.nav:before, .nav:after {
+	border-color: #430a0a;
+	border-style: solid;
+	border-width: 0;
+	border-top-width: 15px;
+	content: '';
+	position: absolute;
+}
+
+.nav:before {
+	left: 0;
+	bottom: -15px;
+	border-left: 30px solid transparent;
+}
+.nav:after {
+	left: 990px;
+	bottom: -15px;
+	border-right: 30px solid transparent;
+}
+
+/* Main area
+-------------------------------------------------------*/
+
+.main {
+	background-color: #2d2d2d;
+	background-image: url('img/bg-main.png');
+	-webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	margin-bottom: 24px;
+}
+
+/* Footer
+-------------------------------------------------------*/
+
+.main-footer {
+	background-color: #050505;
+	background-image: url('img/bg-footer.png');
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+/* Footer > Twitter
+-------------------------------------------------------*/
+
+.twitter-header h3 {
+	font-family: Abel, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+
+.tweet {
+	background-color: #131313;
+	background-image: url('img/bg-tweet.png');
+	padding: 10px;
+}
+
+.tweet-meta {
+	font-size: 0.75em;
+	margin-bottom: 0px !important;
+}
+
+.tweet p {
+	margin-bottom: 6px;
+}
+
+/* Footer > Beautifying
+-------------------------------------------------------*/
+
+.fin {
+	border-bottom-color: #000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #444;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+	font-size: 24px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.fin-word {
+	position: absolute;
+	text-align: center;
+	top: -12px;
+	width: 940px;
+}
+
+.fin-word span {
+	background-color: #050505;
+	background-image: url('img/bg-footer.png');
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+/* Footer > copyright
+-------------------------------------------------------*/
+
+.copyright {
+	color: #aaa;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-bottom: 24px;
+}
+
+.copyright p {
+	font-size: 0.625em;
+	line-height: 1.75em;
+}
+
+.bottomquote {
+	background-color: #080808;
+	background-image: url('img/bg-quote.png');
+	border-bottom-color: #111;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-color: #111;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 10px;
+}

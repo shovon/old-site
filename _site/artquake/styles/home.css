@@ -1,0 +1,238 @@
+/* I N T R O   P A R T */
+
+#first-header,
+#first-column,
+#second-column,
+#third-column {
+    width: 299px;
+}
+
+#first-header,
+#second-header,
+#first-column,
+#second-column,
+#third-column {
+    float: left;
+    clear: right;
+}
+
+#first-header,
+#first-column,
+#second-column {
+    margin-right: 21px;
+}
+
+#first-column,
+#second-column,
+#third-column {
+    color: #333;
+}
+
+/* A B O U T   E V E N T */
+
+#darkened {
+    background-image: url('images/fabric_dark.jpg');
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#build-up p {
+    color: #e95700;
+    font-size: 23px;
+    font-weight: bold;
+    
+    margin-bottom: 25px;
+    
+    -webkit-text-shadow: #959595 0px 2px 2px;
+       -moz-text-shadow: #959595 0px 2px 2px;
+            text-shadow: #959595 0px 2px 2px;
+}
+
+#description p {
+    color: #707070;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#left-part {
+    margin-right: 21px;
+}
+
+#artquake-video {
+    height: 260px;
+    -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+#flickr-info p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.hyperlinked-info {
+    text-align: right;
+}
+
+.hyperlinked-info p {
+    font-size: 20px;
+}
+
+.hyperlinked-info a:link {
+    text-decoration: none;
+    color: #555;
+}
+
+.hyperlinked-info a:visited {
+    text-decoration: none;
+    color: #555;
+}
+
+.hyperlinked-info a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hyperlinked-info a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hyperlinked-info a:link em {
+    color: #02526b;
+    font-style:normal;
+    font-weight: bold;
+}
+
+.hyperlinked-info a:visited em {
+    color: #02526b;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.hyperlinked-info a:hover em {
+    color: #fff;
+    font-style:normal;
+    font-weight: bold;
+    
+    -webkit-text-shadow: none;
+       -moz-text-shadow: none;
+            text-shadow: none;
+}
+
+.hyperlinked-info a:active em {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    
+    -webkit-text-shadow: none;
+       -moz-text-shadow: none;
+            text-shadow: none;
+}
+
+#left-part,
+#right-part {
+    width: 460px;
+    float:left;
+    clear: right;
+}
+
+#twitter-stuff {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+#twitter-title {
+    width: 350px;
+}
+
+#twitter-title,
+#twitter-link {
+    float: left;
+    clear: right;
+}
+
+#twitter-link {
+    text-align: right;
+    font-weight: bold;
+    width: 592px;
+}
+
+#twitter-link p {
+    font-size: 20px;
+}
+
+#loading-message {
+    text-align: center;
+}
+
+.tweet {
+    background-color: #d9d9d9;
+    color: #333;
+    
+    font-size: 12px;
+    
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+            
+    -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+
+    width: 199px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 10px;
+    float: left;
+    clear: right;
+}
+
+.tweet:hover {
+    background-color: #dfdfdf;
+}
+
+a.tweet-time:link {
+    color: #777;
+    text-decoration: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a.tweet-time:visited {
+    color: #777;
+    text-decoration: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a.tweet-time:hover {
+    color: #777;
+    background: #fff;
+    text-decoration: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a.tweet-time:active {
+    color: #777;
+    background: #fff;
+    text-decoration: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}

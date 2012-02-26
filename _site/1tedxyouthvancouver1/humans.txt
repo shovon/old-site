@@ -1,0 +1,19 @@
+Hello, people of the internet!
+
+This site was designed and built by Salehen Shovon Rahman:
+
+	website: shovon.github.com
+	twitter: @shovon_rahman
+	blog:    salehenrahman.wordpress.com
+
+=========
+
+This site was hand-coded in valid -- or at least hopefully 
+valid -- HTML5, and CSS3. The tools used are Notepad++, 
+Chrome Developer Tools, and GIMP.
+
+Here are credits for some stock art used:
+
+tileabl.es/packs/pack-2-paper
+tileabl.es/packs/pack-3-rust
+www.flickr.com/photos/jamiecat/3679271538

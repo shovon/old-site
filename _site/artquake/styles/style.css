@@ -1,0 +1,331 @@
+/* D E F A U L T   H T M L   E L E M E N T S */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans;
+    color: #808080;
+    line-height: 21px;
+    
+    -webkit-text-shadow: #FFF 0px 1px 0px;
+       -moz-text-shadow: #FFF 0px 1px 0px;
+            text-shadow: #FFF 0px 1px 0px;
+    
+    background-image: url('images/fabric.jpg');
+    background-position: center;
+}
+
+h1 {
+    color: #808080;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 13px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+a:link {
+    color: #02526b;
+}
+
+a:visited {
+    color: #02526b;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #02526b;
+    
+    text-decoration: none;
+    
+    -webkit-text-shadow: none;
+       -moz-text-shadow: none;
+            text-shadow: none;
+            
+    -webkit-box-shadow: 2px 2px 0px rgba( 0, 0, 0, 0.5 );
+       -moz-box-shadow: 2px 2px 0px rgba( 0, 0, 0, 0.5 );
+            box-shadow: 2px 2px 0px rgba( 0, 0, 0, 0.5 );
+}
+
+a:active {
+    color: #fff;
+    background-color: #02526b;
+    
+    text-decoration: none;
+    
+    -webkit-text-shadow: none;
+       -moz-text-shadow: none;
+            text-shadow: none;
+            
+    -webkit-box-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 );
+       -moz-box-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 );
+            box-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 );
+}
+
+br { clear: both; }
+
+/* C L A S S E S */
+
+.centered {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.padded {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.helper { min-width: 960px; }
+
+.relative-helper {
+    position: relative;
+}
+
+.separator {
+    background-color: #AEAEAE;
+
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    -webkit-box-shadow: 0px 1px 0px #fff;
+       -moz-box-shadow: 0px 1px 0px #fff;
+            box-shadow: 0px 1px 0px #fff;
+}
+
+.clearfooter {
+    height: 130px;
+    clear: both;
+}
+
+/* F I X E D   S T Y L E S */
+
+/* This is where the css code will allow the
+ * footer to stay down no matter how tall
+ * the screen resolution is. */ 
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-bottom: 130px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+}
+
+/* U N I Q U E   S T Y L E S */
+
+#drawn-header {
+	background-image: url('images/drawings.png');
+	background-repeat: repeat-x;
+	height: 332px;
+	margin-top: 20px;
+}
+
+#logo {
+	background-image: url('images/artquake_logo.png');
+
+	margin: 0 auto;
+	
+	width: 820px;
+	height: 271px;
+}
+
+#bottom-coloured,
+#top-coloured {
+    background-image: url('images/top_coloured.jpg');
+    background-position: center;
+}
+
+#top-coloured {
+    height: 10px;
+    
+    -webkit-box-shadow: 0px 3px 0px rgba( 0, 0, 0, 0.25 );
+       -moz-box-shadow: 0px 3px 0px rgba( 0, 0, 0, 0.25 );
+            box-shadow: 0px 3px 0px rgba( 0, 0, 0, 0.25 );
+}
+
+#bottom-coloured {
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    
+    -webkit-box-shadow: 0px -3px 0px rgba( 0, 0, 0, 0.25 );
+       -moz-box-shadow: 0px -3px 0px rgba( 0, 0, 0, 0.25 );
+            box-shadow: 0px -3px 0px rgba( 0, 0, 0, 0.25 );
+}
+
+#footer-orange {
+    background-image: url('images/fabric_orange.jpg');
+    color: #fff;
+    font-size: 11px;
+    
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+     -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    
+         -moz-border-radius-topleft: 15px;
+        -moz-border-radius-topright: 15px;
+        
+             border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+    -webkit-text-shadow: 0px -1px 0px #853200;
+       -moz-text-shadow: 0px -1px 0px #853200;
+            text-shadow: 0px -1px 0px #853200;
+}
+
+#footer h1 {
+    color: #fff;
+    
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+#footer a:link {
+    background-color: #e95700;
+    color: #fff;
+    text-decoration: underline;
+    
+    -webkit-text-shadow: none;
+        moz-text-shadow: none;
+            text-shadow: none;
+}
+
+#footer a:visited {
+    background-color: #e95700;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    background-color: #fff;
+    color: #e95700;
+    text-decoration: none;
+}
+
+#footer a:active {
+    background-color: #fff;
+    color: #e95700;
+    text-decoration: none;
+}
+
+#padded-footer {
+    padding: 12px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+#footer-column-1,
+#footer-column-2,
+#footer-column-3,
+#footer-column-4 {
+    float: left;
+    clear: right;
+}
+
+#footer-column-1,
+#footer-column-2 {
+    width: 150px;
+}
+
+#footer-column-3 {
+    width: 80px;
+    
+    border-right-style: solid;
+    border-right-color: #e95700
+}
+
+#footer-column-4 {
+    width: 390px;
+}
+
+#footer-column-1,
+#footer-column-2,
+#footer-column-3 {
+    margin-right: 30px;
+}
+
+#footer-column-2,
+#footer-column-3,
+#footer-column-4 {
+    padding-left: 20px;
+    
+    min-height: 85px;
+
+    border-left-style: solid;
+    border-left-color: #f96710;
+    border-left-width: 1px;
+    
+    -webkit-box-shadow: #b94500 -1px 0px 0px;
+       -moz-box-shadow: #b94500 -1px 0px 0px;
+            box-shadow: #b94500 -1px 0px 0px;
+}
+
+#footer-column-4 p {
+    margin-bottom: 10px;
+    line-height: 12px;
+    font-size: 10px;
+}
+
+a#thehue-logo:link {
+    background: none;
+    border: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a#thehue-logo:visited {
+    background: none;
+    border: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a#thehue-logo:hover {
+    background: none;
+    border: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+a#thehue-logo:active {
+    background: none;
+    border: none;
+    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}

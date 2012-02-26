@@ -1,0 +1,353 @@
+* {
+	/* 
+	 * This is particularly useful whenever you want to set the padding to a
+	 * box. Without this setting, a box will change its physical size as the
+	 * padding grows larger.
+	 */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #f3f3f3;
+	background-image: url('img/bg.png');
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+body {
+	padding: 30px 0;
+}
+
+hr {
+	border-style: solid none none none;
+	border-width: 1px 0 0 0;
+	border-color: #eee transparent transparent transparent;
+	margin: 35px 0;
+}
+
+img,
+object {
+	/* Allows for more of a fluid image layout. */
+	max-width: 100%;
+}
+
+.project-thumbnail {
+	padding: 5px;
+	background-color: #bbb;
+	background-color: rgba(187, 187, 187, 0.25);
+	max-width: 300px;
+}
+
+.project-thumbnail * {
+	margin: 0;
+	padding: 0;
+}
+
+.center-content {
+	margin: 0 auto;
+	max-width: 1120px;
+	width: 95%;
+}
+
+.track-box {
+	margin: 20px 0;
+}
+
+a {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #dd3300;
+}
+
+a:hover {
+	color: #ff6600;
+	border-bottom-style: solid;
+	border-bottom-color: #ff6600;
+	border-bottom-width: 1px;
+}
+
+.no-style:hover {
+	border: none;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+	color: #ff6600;
+}
+
+/**
+ * Use this on a heading, and it will look really nice. Give it a try.
+ */
+.section-header {
+	margin-top: 0;
+	margin-left: -60px;
+	padding: 0 20px 0 40px;
+	background-color: #ff6600;
+	color: white;
+	display: inline-block;
+	position: relative;
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.125);
+}
+
+/**
+ * This is the part where the content is going to go.
+ */
+.white-area {
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	padding: 40px;
+}
+
+/**
+ * This is going to be used for the copyright message.
+ */
+.copyright-message {
+	padding: 0 40px;
+}
+
+/**
+ * Use this whenever you want to lighten the color of a text.
+ */
+.feint-color {
+	color: #333;
+}
+
+/*
+ * This is the largest setting. Preferably used to change the font and image
+ * size. Not the actual layout itself.
+ */
+@media only screen and (min-width: 1120px) {
+	html {
+		font-size: 1.25em;
+	}
+}
+
+/*
+ * This is the setting between the largest and the max width. Preferably used to
+ * change the font and image size. Not the actual layout itself.
+ */
+@media only screen and (min-width: 960px) and (max-width: 1120px) {
+	html {
+		font-size: 1.125em;
+	}
+}
+
+/*
+ * This is the setting for the max width and beyond. Preferably used to change
+ * the ribbon. Not the actual layout itself.
+ */
+@media only screen and (min-width: 960px) {
+	.section-header {
+		padding: 0 20px 0 60px;
+	}
+	
+	.section-header:after {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: 0px;
+		top: 100%;
+		border-width: 5px 10px;
+		border-style: solid;
+		border-color: #ff5500 #ff5500 transparent transparent;
+	}
+}
+
+/*
+ * This is the size right before the max-width. Anything below this point is
+ * used to set the width of the center-content to 100% width.
+ */
+@media only screen and (max-width: 959px) {
+	body {
+		padding: 0;
+	}
+	
+	.center-content {
+		width: 100%;
+	}
+	
+	.section-header {
+		margin-left: -40px;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.body_column {
+	padding: 0;
+	margin: 0;
+}
+
+/*
+ * Level 4
+ */
+@media only screen and (min-width: 840px) {
+	.two_columns .body_column {
+		float: left;
+		clear: right;
+		width: 46%;
+	}
+	
+	.two_columns .first_column {
+		margin-right: 2%;
+	}
+	
+	.two_columns .last_column {
+		margin-left: 2%;
+	}
+	
+	.three_columns .body_column {
+		float: left;
+		clear: right;
+		width: 32%;
+		margin: 0 0.5%;
+	}
+	
+	.three_columns .first_column {
+		margin: 0 0.5% 0 0;
+	}
+	
+	.three_columns .last_column {
+		margin-right: 0 0 0 0.5%;
+	}
+	
+	.four_columns .body_column {
+		float: left;
+		clear: right;
+		width: 23%;
+		margin: 0 1%;
+	}
+	
+	.four_columns .first_column {
+		margin: 0 .5% 0 0;
+	}
+	
+	.four_columns .last_column {
+		margin: 0 0 0 .5%;
+	}
+	
+	.six_columns .body_column {
+		float: left;
+		clear: right;
+		width: 15%;
+		margin: 0 1%;
+	}
+	
+	.six_columns .first_column {
+		margin: 0 .5% 0 0;
+	}
+	
+	.six_columns .last_column {
+		margin: 0 0 0 0.5%;
+	}
+}
+
+/*
+ * Level 3
+ */
+@media only screen and (min-width: 560px) and (max-width: 839px) {
+	.two_columns .body_column,
+	.four_columns .body_column {
+		float: left;
+		clear: right;
+		width: 46%;
+	}
+	
+	.two_columns .first_column,
+	.four_columns .first_column,
+	.four_columns .third_column {
+		margin-right: 2%;
+	}
+	
+	.two_columns .last_column,
+	.four_columns .second_column,
+	.four_columns .last_column {
+		margin-left: 2%;
+	}
+	
+	.four_columns .clear_middle {
+		clear: both;
+	}
+	
+	.three_columns .body_column {
+		width: 100%;
+	}
+	
+	.three_columns .body_clear {
+		clear: both;
+	}
+	
+	.six_columns .body_column {
+		float: left;
+		clear: right;
+		width: 32%;
+		margin: 0 0.5%;
+	}
+	
+	.six_columns .first_column {
+		margin: 0 0.5% 0 0;
+	}
+	
+	.six_columns .last_column {
+		margin-right: 0 0 0 0.5%;
+	}
+	
+	.six_columns .clear_middle {
+		clear: both;
+	}
+}
+
+/*
+ * Level 2
+ */
+@media only screen and (min-width: 280px) and (max-width: 559px) {
+	.two_columns .body_clear,
+	.three_columns .body_clear,
+	.four_columns .body_clear{
+		clear: both;
+	}
+}
+
+/*
+ * Level 1
+ */
+@media only screen and (max-width: 279px) {
+	.body_column {
+		width: 100%;
+	}
+
+	.body_clear {
+		clear: both;
+	}
+}
