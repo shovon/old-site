@@ -13,6 +13,7 @@ html {
 	background-color: #f3f3f3;
 	background-image: url('img/bg.png');
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 h1,
@@ -43,10 +44,24 @@ hr {
 	margin: 35px 0;
 }
 
+hr.no-style {
+	border: none;
+}
+
 img,
 object {
 	/* Allows for more of a fluid image layout. */
 	max-width: 100%;
+}
+
+button {
+	border-radius: 5px;
+	bodrer-style: solid;
+	border-width: 1px;
+	border-color: #dd3300;
+	background-color: #ff6600;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 
 .project-thumbnail {
@@ -138,6 +153,33 @@ h6 a:visited {
  */
 .feint-color {
 	color: #333;
+}
+
+/**
+ * If you want some of your elements to have a dark
+ */
+.dark-box {
+	padding: 20px;
+	background-color: rgba(128, 128, 128, 0.25);
+	text-shadow: 0 1px 0 white;
+	margin-bottom: 15px;
+}
+
+.dark-box p:first-child {
+	margin-top: 0;
+}
+
+.dark-box p:last-child {
+	margin-bottom: 0;
+}
+
+.center-aligned {
+	text-align: center;
+}
+
+.full-width {
+	display: block;
+	width: 100%;
 }
 
 /*
