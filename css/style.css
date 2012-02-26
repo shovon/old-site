@@ -258,7 +258,7 @@ h6 a:visited {
 	.two_columns .body_column {
 		float: left;
 		clear: right;
-		width: 46%;
+		width: 48%;
 	}
 	
 	.two_columns .first_column {
@@ -323,7 +323,7 @@ h6 a:visited {
 	.four_columns .body_column {
 		float: left;
 		clear: right;
-		width: 46%;
+		width: 48%;
 	}
 	
 	.two_columns .first_column,
