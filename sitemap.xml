@@ -16,6 +16,7 @@ layout: nil
   </url>
   {% endfor %}
   {% for page in site.pages %}
+  <!-- Here's a page. -->
   {% if page.sitemap != null and page.sitemap != empty %}
   <url>
     <loc>{{ site.baseurl }}{{ page.url }}</loc>
