@@ -119,7 +119,7 @@ a:hover {
 	border-bottom-width: 1px;
 }
 
-.no-style:hover {
+a.no-style:hover {
 	border: none;
 }
 
