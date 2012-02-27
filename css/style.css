@@ -54,14 +54,31 @@ object {
 	max-width: 100%;
 }
 
-button {
+button,
+a.button {
 	border-radius: 5px;
-	bodrer-style: solid;
+	border-style: solid;
 	border-width: 1px;
 	border-color: #dd3300;
 	background-color: #ff6600;
 	color: white;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+a.button {
+	text-align: center;
+}
+
+a.button:hover {
+	color: white;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dd3300;
+}
+
+a.button:visited {
+	color: white;
 }
 
 .project-thumbnail {
