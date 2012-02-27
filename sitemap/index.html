@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Sitemap | Shovon Rahman"
+sitemap: true
+priority: 0.2
+changefreq: daily
+lastmod: "2011-02-26"
+---
+
+<h3><a href="{{ page.base_url }}/">Shovon Rahman</a></h3>
+<h1>Sitemap</h1>
+{% for page in site.pages %}
+	{% if page.sitemap != null and page.sitemap != empty %}
+	<p>
+		<ul>
+			<a href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a>
+		</ul>
+	<p>
+	{% endif %}
+{% endfor %}
