@@ -1,0 +1,961 @@
+/* normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 21, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 31, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 41, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 50, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 66, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 80, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 88, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 101, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 111, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
+/* line 125, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 130, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 135, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 140, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 145, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 150, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 159, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 168, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 172, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 180, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 188, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 198, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 210, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 220, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 233, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 240, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 245, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 255, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 262, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 266, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 282, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 286, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+/* line 296, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/* line 305, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 321, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 330, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 343, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 356, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 364, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 376, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 392, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 404, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 418, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 429, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+/* line 441, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 453, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+/* line 465, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 475, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 485, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 499, c:/Users/hp/desktop/shovon.github.com/src/scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 9, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+* {
+  /* 
+   * This is particularly useful whenever you want to set the padding to a box. Without this
+   * setting, a box will change its physical size as the padding grows larger.
+   */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+html {
+  background-color: #f3f3f3;
+  background-image: url("img/bg.png");
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+@media only screen and (min-width: 1120px) {
+  /* line 19, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  html {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1119px) {
+  /* line 19, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  html {
+    font-size: 1.125em;
+  }
+}
+
+/* line 39, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* line 47, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+/* line 51, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+body {
+  padding: 30px 0;
+}
+@media only screen and (max-width: 959px) {
+  /* line 51, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  body {
+    padding: 0;
+  }
+}
+
+/* line 59, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+hr {
+  border-style: solid none none none;
+  border-width: 1px 0 0 0;
+  border-color: #eee transparent transparent transparent;
+  margin: 35px 0;
+}
+
+/* line 66, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+hr.no-style {
+  border: none;
+}
+
+/* line 71, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+img,
+object {
+  /* Allows for more of a fluid image layout. */
+  max-width: 100%;
+}
+
+/* line 85, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+button,
+a.button {
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b34700;
+  background-color: #ff6600;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+/* line 91, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a.button {
+  text-align: center;
+}
+
+/* line 95, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a.button:hover {
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b34700;
+}
+
+/* line 99, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a.button:visited {
+  color: white;
+}
+
+/* line 103, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.center-content {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 95%;
+}
+@media only screen and (max-width: 959px) {
+  /* line 103, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .center-content {
+    width: 100%;
+  }
+}
+
+/* line 113, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+/* line 118, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a:visited {
+  color: #b34700;
+}
+
+/* line 122, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a:hover {
+  color: #ff6600;
+  border-bottom-style: solid;
+  border-bottom-color: #ff6600;
+  border-bottom-width: 1px;
+}
+
+/* line 129, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+a.no-style:hover {
+  border: none;
+}
+
+/* line 139, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #ff6600;
+}
+
+/**
+ * Use this on a heading, and it will look really nice. Give it a try.
+ */
+/* line 147, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.section-header {
+  margin-top: 0;
+  margin-left: -60px;
+  padding: 0 20px 0 40px;
+  background-color: #ff6600;
+  color: white;
+  display: inline-block;
+  position: relative;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.125);
+  -o-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.125);
+}
+@media only screen and (min-width: 960px) {
+  /* line 147, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .section-header {
+    padding: 0 20px 0 60px;
+  }
+  /* line 161, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .section-header:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #e65c00 #e65c00 transparent transparent;
+  }
+}
+@media only screen and (max-width: 959px) {
+  /* line 147, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .section-header {
+    margin-left: -40px;
+  }
+}
+
+/**
+ * This is the part where the content is going to go.
+ */
+/* line 186, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.white-area {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+}
+
+/**
+ * This is going to be used for the copyright message.
+ */
+/* line 196, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.copyright-message {
+  padding: 0 40px;
+}
+
+/**
+ * Use this whenever you want to lighten the color of a text.
+ */
+/* line 203, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.feint-color {
+  color: #333;
+}
+
+/**
+ * If you want some of your elements to have a dark background, then use this class.
+ */
+/* line 210, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.dark-box {
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.25);
+  text-shadow: 0 1px 0 white;
+  margin-bottom: 15px;
+}
+
+/* line 217, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.dark-box p:first-child {
+  margin-top: 0;
+}
+
+/* line 221, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.dark-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 225, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.center-aligned {
+  text-align: center;
+}
+
+/* line 229, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.right-aligned {
+  text-align: right;
+}
+
+/* line 233, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.full-width {
+  display: block;
+  width: 100%;
+}
+
+/* line 238, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.clear {
+  clear: both;
+}
+
+/* line 242, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+.body_column {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Level 4
+ */
+@media only screen and (min-width: 840px) {
+  /* line 252, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .body_column {
+    float: left;
+    clear: right;
+    width: 48%;
+  }
+
+  /* line 260, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .first_column {
+    margin-right: 2%;
+  }
+
+  /* line 266, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .last_column {
+    margin-left: 2%;
+  }
+
+  /* line 272, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .three_columns .body_column {
+    float: left;
+    clear: right;
+    width: 32%;
+    margin: 0 0.5%;
+  }
+
+  /* line 281, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .three_columns .first_column {
+    margin: 0 0.5% 0 0;
+  }
+
+  /* line 287, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .three_columns .last_column {
+    margin-right: 0 0 0 0.5%;
+  }
+
+  /* line 293, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .four_columns .body_column {
+    float: left;
+    clear: right;
+    width: 23%;
+    margin: 0 1%;
+  }
+
+  /* line 302, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .four_columns .first_column {
+    margin: 0 .5% 0 0;
+  }
+
+  /* line 308, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .four_columns .last_column {
+    margin: 0 0 0 .5%;
+  }
+
+  /* line 314, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .body_column {
+    float: left;
+    clear: right;
+    width: 15%;
+    margin: 0 1%;
+  }
+
+  /* line 323, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .first_column {
+    margin: 0 .5% 0 0;
+  }
+
+  /* line 329, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .last_column {
+    margin: 0 0 0 0.5%;
+  }
+}
+/*
+ * Level 3
+ */
+@media only screen and (min-width: 560px) and (max-width: 839px) {
+  /* line 341, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .body_column,
+  .four_columns .body_column {
+    float: left;
+    clear: right;
+    width: 48%;
+  }
+
+  /* line 351, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .first_column, .two_columns .third_column,
+  .four_columns .first_column,
+  .four_columns .third_column {
+    margin-right: 2%;
+  }
+
+  /* line 359, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .last_column, .two_columns .second_column,
+  .four_columns .last_column,
+  .four_columns .second_column {
+    margin-left: 2%;
+  }
+
+  /* line 365, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .four_columns .clear_middle {
+    clear: both;
+  }
+
+  /* line 371, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .three_columns .body_column {
+    width: 100%;
+  }
+
+  /* line 377, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .three_columns .body_clear {
+    clear: both;
+  }
+
+  /* line 383, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .body_column {
+    float: left;
+    clear: right;
+    width: 32%;
+    margin: 0 0.5%;
+  }
+
+  /* line 392, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .first_column {
+    margin: 0 0.5% 0 0;
+  }
+
+  /* line 398, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .last_column {
+    margin-right: 0 0 0 0.5%;
+  }
+
+  /* line 404, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .six_columns .clear_middle {
+    clear: both;
+  }
+}
+/*
+ * Level 2
+ */
+@media only screen and (min-width: 280px) and (max-width: 559px) {
+  /* line 417, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .two_columns .body_clear,
+  .three_columns .body_clear,
+  .four_columns .body_clear {
+    clear: both;
+  }
+}
+/*
+ * Level 1
+ */
+@media only screen and (max-width: 279px) {
+  /* line 427, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .body_column {
+    width: 100%;
+  }
+
+  /* line 431, c:/Users/hp/desktop/shovon.github.com/src/scss/_shovon.scss */
+  .body_clear {
+    clear: both;
+  }
+}

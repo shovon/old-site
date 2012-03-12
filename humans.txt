@@ -1,1 +1,5 @@
-Hi, my name is Salehen (pronounced Sa-lee-heen), and I built this website. If you want, you can follow me on twitter. My username is @shovon_rahman. Go there.
+name: Salehen Shovon Rahman
+twitter: @shovon_rahman
+soundcloud: http://soundcloud.com/shovonrahman
+youtube: http://youtube.com/shovonRahman
+tumblr: http://shovonrahman.tumblr.com

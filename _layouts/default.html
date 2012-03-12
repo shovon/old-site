@@ -9,10 +9,11 @@
 		<meta name="keywords" content="programmer, musician">
 		
 		<meta name="viewport" content="width=device-width">
+
+		<link rel="author" href="humans.txt">
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/css/normalize.css">
-		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/bin/css/{% if page.stylesheet != null and page.stylesheet != empty %}{{ page.stylesheet }}{%else%}style.css{% endif %}">
 		
 		<script type="text/javascript">
 
@@ -43,6 +44,8 @@
 				</p>
 			</div>
 		</div>
+
+		{% include scripts.html %}
 	</body>
 
 </html>

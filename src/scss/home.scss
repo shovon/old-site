@@ -1,0 +1,31 @@
+@import "shovon";
+
+.project-thumbnail,
+.past-project-thumbnail {
+	padding: 5px;
+	background-color: #bbb;
+	background-color: rgba(187, 187, 187, 0.25);
+}
+
+.project-thumbnail {
+	max-width: 300px;
+}
+
+.past-project-thumbnail {
+	max-width: 620px;
+}
+
+.project-thumbnail *,
+.past-project-thumbnail * {
+	margin: 0;
+	padding: 0;
+}
+
+.track-box {
+	margin: 20px 0;
+}
+
+.tweet-grab-message {
+	text-align: center;
+	padding: 20px 0;
+}

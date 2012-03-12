@@ -18,10 +18,10 @@ layout: nil
 	{% for page in site.pages %}
 	{% if page.sitemap != null and page.sitemap != empty %}
 	<url>
-		<loc>{{ site.base_url }}{{ page.url }}</loc>
-		<priority>{{ page.priority }}</priority>
-		<changefreq>{{ page.changefreq }}</changefreq>
-		<lastmod>{{ page.lastmod }}</lastmod>
+		<loc>{{ site.base_url | xml_escape }}{{ page.url | xml_escape }}</loc>
+		<priority>{{ page.priority | xml_escape }}</priority>
+		<changefreq>{{ page.changefreq | xml_escape }}</changefreq>
+		<lastmod>{{ page.lastmod | xml_escape }}</lastmod>
 	</url>
 	{% endif %}
 	{% endfor %}
